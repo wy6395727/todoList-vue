@@ -6,23 +6,22 @@
 		</section>
 		<section class="content-container">
 			<!--右边的容器-->
-			<todo></todo>
+			<router-view></router-view>
 		</section>
 	</section>
 </template>
 
 <script type="text/ecmascript-6">
 	import menus from './menus.vue';
-	import todo from './todo.vue';
     export default {
         components: {
-        	menus,
-			todo
-        }
+        	menus
+        },
     }
 
 </script>
 
 <style lang="less" rel="stylesheet/less">
 	@import "../common/style/layouts";
+	@import "../common/style/icon";
 </style>
